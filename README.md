@@ -35,18 +35,11 @@ Check out how YOLOv4 compares to other object detection systems.
 
 <p align="center"><img src="data/helpers/performance.png" width="640"\></p>
 
-## Downloading Official Pre-trained Weights
-YOLOv4 comes pre-trained and able to detect 80 classes. For easy demo purposes we will use the pre-trained weights.
-Download pre-trained yolov4.weights file: https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT
 
-Copy and paste yolov4.weights from your downloads folder into the 'data' folder of this repository.
-
-If you want to use yolov4-tiny.weights, a smaller model that is faster at running detections but less accurate, download file here: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
 
 ## Using Custom Trained YOLOv4 Weights
 <strong>Learn How To Train Custom YOLOv4 Weights here: https://www.youtube.com/watch?v=mmj3nxGT2YQ </strong>
 
-USE MY LICENSE PLATE TRAINED CUSTOM WEIGHTS: https://drive.google.com/file/d/1EUPtbtdF0bjRtNjGv436vDY28EN5DXDH/view?usp=sharing
 
 Copy and paste your custom .weights file into the 'data' folder and copy and paste your custom .names into the 'data/classes/' folder.
 
@@ -67,7 +60,7 @@ python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolo
 python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints/yolov4-tiny-416 --input_size 416 --model yolov4 --tiny
 
 # custom yolov4
-python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4 
+python save_model.py --weights ./data/yolov4-obj_3000.weights --output ./checkpoints/yolov4-obj_3000-416 --input_size 416 --model yolov4 
 
 # Run yolov4 tensorflow model
 python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --images ./data/images/kite.jpg
