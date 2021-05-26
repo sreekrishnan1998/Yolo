@@ -1,3 +1,4 @@
+Download the weights from (https://drive.google.com/file/d/1hDehE059pKu_FKwTcz8f4Sd2sSkdMfzZ/view?usp=sharing)
 # tensorflow-yolov4-tflite
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
